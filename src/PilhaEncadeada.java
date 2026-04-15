@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class PilhaEncadeada<T> implements Iterable{
+public class PilhaEncadeada<T> implements Iterable<T>{
     private No<T> topo;
     private int size;
 
@@ -61,8 +61,6 @@ public class PilhaEncadeada<T> implements Iterable{
        public boolean hasNext(){
         return atual != null;
        }
-
-       @Override
        public T next(){
         if(!hasNext()){
             return null;
